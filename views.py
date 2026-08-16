@@ -18,7 +18,3 @@ def index(request):
             serializer.save()
             return JsonResponse(serializer.data, status=201)
     return JsonResponse({'error': 'Invalid request method'}, status=405)
-
-
-def login(request):
-    pass
